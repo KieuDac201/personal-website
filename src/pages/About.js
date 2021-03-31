@@ -1,6 +1,7 @@
 import React from 'react'
 import picProfile from '../dac.jpg'
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 const About = () => {
@@ -17,13 +18,13 @@ const About = () => {
                         <a href="https://www.facebook.com/Dac.dep/" target="_blank" className="about-card__link">
                             <FaFacebookF />
                         </a>
-                        <a href="https://www.facebook.com/Dac.dep/" className="about-card__link">
+                        <a href="https://www.facebook.com/Dac.dep/" target="_blank" className="about-card__link">
                             <FaTwitter />
                         </a>
-                        <a href="https://www.facebook.com/Dac.dep/" className="about-card__link">
-                            <FaLinkedinIn />
+                        <a href="https://github.com/KieuDac201" target="_blank" className="about-card__link">
+                            <FaGithub />
                         </a>
-                        <a href="https://www.facebook.com/Dac.dep/" className="about-card__link">
+                        <a href="https://www.facebook.com/Dac.dep/"  target="_blank" className="about-card__link">
                             <FaInstagram />
                         </a>
                     </div>
@@ -33,8 +34,14 @@ const About = () => {
                 <h1>Hello</h1>
                 <h3>Here's who I am & what I do</h3>
                 <div className="about-content__btn">
-                    <button className="btn">Resume</button>
-                    <button className="btn btn-outline">Projects</button>
+                    <Link to="/resume">
+                        <button className="btn">Resume</button>
+                    </Link>
+                    <Link to="/project">
+                        <button className="btn btn-outline">Projects</button>
+                    </Link>
+                    
+                    
                 </div>
                 <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
                     <br /> <br />

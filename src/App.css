@@ -60,6 +60,19 @@ img{
   top: 50%;
   transform: translateY(-30%);
 }
+.contact,
+.project,
+.resume{
+  padding-top: 107px;
+  background: var(--secondary-color);
+}
+.container{
+  text-align: center;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 125px 20px 50px 20px;
+}
 /*===============================NAVBAR===================================*/
 .navbar{
   width: 100%;
@@ -130,7 +143,6 @@ img{
   min-height:90vh;
   margin-top: 106px;
   display: flex;
-  
 }
 /*----about-picture-------*/
 .about-picture{
@@ -259,18 +271,7 @@ img{
   margin-right: 20px;
 }
 /*======================PROJECT=========================*/
-.project{
-  margin-top: 107px;
-  width: 100%;
-  background-color: var(--secondary-color);
-}
-.project-container{
-  max-width: 790px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 120px 20px 0 20px;
-  text-align: center;
-}
+
 
 .project-desc{
   padding: 45px 35px;
@@ -299,9 +300,7 @@ img{
   left: 0;
   top: 58px;
 }
-.card:last-child{
-  margin-bottom: 110px;
-}
+
 .card-content{
   width: 60%;
   padding: 55px 10px 0 35px;
@@ -330,17 +329,8 @@ img{
   object-fit: cover;
 }
 /*======================CONTACT=========================*/
-.contact{
-  padding-top: 107px;
-  background: var(--secondary-color);
-}
-.contact-container{
-  text-align: center;
-  max-width: 720px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 125px 20px 50px 20px;
-}
+
+
 .contact-form{
   background-color: var(--light-color);
   padding: 65px;
@@ -391,6 +381,77 @@ img{
   color: var(--primary-color);
   vertical-align: text-top;
   padding: 3px;
+}
+/*======================RESUME=========================*/
+.resume-box{
+  text-align: left;
+  margin-top: 110px;
+}
+.resume-title{
+  margin-bottom: 60px;
+  font-size: 25px;
+  font-weight: 700; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.resume-content{
+  background-color: var(--light-color);
+  padding: 90px 55px;
+  display: flex;
+  margin-bottom: 30px;
+  box-shadow:  -11.31px 11.31px 25px 0px rgba(138,131,124,0.23);
+}
+.resume-info{
+  width: 40%;
+}
+.resume-time{
+  font-size: 20px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.resume-info h5{
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.resume-info p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.resume-desc{
+  width: 60%;
+  font-size: 15px;
+  padding-left: 15px;
+  margin-top: 35px;
+}
+.resume-content:last-child{
+  flex-direction: column;
+}
+.title-skill{
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: block;
+  width: 100%;
+}
+.skill-list{
+  margin-bottom: 70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill-item{
+  width: 50%;
+  list-style: none;
+  margin-bottom: 10px;
+}
+.skill-item .square{
+  width: 12px;
+  height: 12px;
+  background-color: var(--primary-color);
+  margin-right: 10px;
 }
 /*======================RESPONSIVE=========================*/
 @media (max-width: 1140px){
@@ -538,6 +599,19 @@ img{
 }
 .form-group:first-child div:last-child {
   margin-left: 0PX;
+}
+.form-group:first-child div:first-child {
+  margin-right: 0;
+}
+.resume-content{
+  flex-direction: column;
+}
+.resume-info{
+  width: 100%;
+}
+.resume-desc{
+  padding: 0;
+  width: 100%;
 }
 }
 @media (max-width: 680px){

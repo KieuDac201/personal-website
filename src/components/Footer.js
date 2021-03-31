@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaGithub, FaSkype } from "react-icons/fa";
 
 function Footer() {
     return (
@@ -20,17 +20,17 @@ function Footer() {
                     <div className="footer-item">
                         <h4>Follow</h4>
                         <p>
-                            <a href="" className="footer-link">
+                            <a href="https://www.facebook.com/Dac.dep/" target="_blank" className="footer-link">
                                 <FaFacebookF  />
                             </a>
-                            <a href="" className="footer-link">
+                            <a href="" className="footer-link" href="https://www.facebook.com/Dac.dep/" target="_blank">
                                 <FaTwitter  />
                             </a>
-                            <a href="" className="footer-link">
-                                <FaLinkedinIn  />
+                            <a href="https://github.com/KieuDac201" className="footer-link" target="_blank">
+                                <FaGithub  />
                             </a>
-                            <a href="" className="footer-link">
-                                <FaInstagram  />
+                            <a href="" className="footer-link" href="https://www.facebook.com/Dac.dep/" target="_blank">
+                                <FaSkype  />
                             </a>
                         </p>
                     </div>
