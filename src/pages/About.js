@@ -1,8 +1,8 @@
 import React from 'react'
-import picProfile from '../dac.jpg'
+import picProfile from '../assets/img/dac.jpg'
 import { FaFacebookF, FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-
+import '../style/About.css'
 
 const About = () => {
     return (

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { FaBars, FaTimes } from "react-icons/fa";
-
+import '../style/Navbar.css'
 const Navbar = () => {
     
     const [isMenu, setIsMenu] = useState(false)

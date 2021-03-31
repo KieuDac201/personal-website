@@ -1,11 +1,13 @@
 import React from 'react'
 import { FaFacebookF, FaTwitter, FaGithub, FaSkype } from "react-icons/fa";
+import '../style/Footer.css'
 
 function Footer() {
     return (
         <div className="footer">
             <div className="footer-container">
                 <div className="footer-left">
+                    <h4>Address</h4>
                     <p>Thach That - Ha Noi</p>
                 </div>
                 <div className="footer-right">
@@ -14,7 +16,7 @@ function Footer() {
                         <p>082 7898 103</p>
                     </div>
                     <div className="footer-item">
-                        <h4>Write</h4>
+                        <h4>Email</h4>
                         <p>kieudac18082001@gmail.com</p>
                     </div>
                     <div className="footer-item">
