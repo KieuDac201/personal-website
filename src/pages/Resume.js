@@ -44,7 +44,7 @@ const Resume = () => {
                         <ul className="skill-list">
                             <li className="skill-item"><span className="square"></span>HTML, CSS</li>
                             <li className="skill-item"><span className="square"></span>JAVASCRIPT</li>
-                            <li className="skill-item"><span className="square"></span>BOOTSTRAPS</li>
+                            <li className="skill-item"><span className="square"></span>BOOTSTRAP</li>
                             <li className="skill-item"><span className="square"></span>REACT JS</li>
                         </ul>
                         <div className="title-skill">Languages</div>
