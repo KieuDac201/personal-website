@@ -378,8 +378,10 @@ img{
 .form-group:first-child div:last-child{
   margin-left: 15PX;
 }
-.form-group div input:hover, 
-.form-group div input:focus{
+.form-group input:hover, 
+.form-group input:focus,
+.form-group textarea:hover,
+.form-group textarea:focus{
   border-color:var(--primary-color);
 }
 .form-group div label{
