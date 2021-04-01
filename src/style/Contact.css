@@ -49,3 +49,7 @@
     vertical-align: text-top;
     padding: 3px;
   }
+  .form-group input::placeholder,
+  .form-group textarea::placeholder{
+    color: #d93025;
+  }
