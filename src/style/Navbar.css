@@ -5,7 +5,9 @@
     top: 0;
     left: 0;
     z-index: 10;
-  }
+    
+}
+ 
   .navbar__container{
     max-width: 1440px;
     padding: 39px 20px;

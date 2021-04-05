@@ -1,42 +1,80 @@
-import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import '../style/Navbar.css'
+import "../style/Navbar.css";
+import { Animated } from "react-animated-css";
 
 const Navbar = () => {
-    
-    const [isMenu, setIsMenu] = useState(false)
+    const [isMenu, setIsMenu] = useState(false);
 
     const handleClick = () => {
-        setIsMenu(!isMenu)
-    }
+        setIsMenu(!isMenu);
+    };
     return (
         <nav className="navbar">
             <div className="navbar__container">
-                <div className="navbar__logo">
-                    <div className="navbar__logo--name"><div className="square"></div>Kieu Dac</div>
-                    <div className="navbar__logo--position"><span>/</span> FRONT-END DEVELOPER</div>
-                </div>
-                <ul className={isMenu ? 'navbar__menu active' : 'navbar__menu'}>
+                <Animated animationIn="fadeInLeft" animationInDuration={1000} isVisible={true}>
+
+                    <div className="navbar__logo">
+                        <div className="navbar__logo--name">
+                            <div className="square"></div>Kieu Dac
+                    </div>
+                        <div className="navbar__logo--position">
+                            <span>/</span> FRONT-END DEVELOPER
+                        </div>
+                    </div>
+                </Animated>
+                <Animated animationIn="fadeInRight" animationInDuration={1000} isVisible={true}>
+                <ul className={isMenu ? "navbar__menu active" : "navbar__menu"}>
                     <li className="navbar__item">
-                        <NavLink exact to="/" className="navbar__link" activeClassName="navbar__link--active" onClick={handleClick}>About me</NavLink>
+                        <NavLink
+                            exact
+                            to="/"
+                            className="navbar__link"
+                            activeClassName="navbar__link--active"
+                            onClick={handleClick}
+                        >
+                            About me
+                        </NavLink>
                     </li>
                     <li className="navbar__item">
-                        <NavLink to="/resume" className="navbar__link" activeClassName="navbar__link--active" onClick={handleClick}>Resume</NavLink>
+                        <NavLink
+                            to="/resume"
+                            className="navbar__link"
+                            activeClassName="navbar__link--active"
+                            onClick={handleClick}
+                        >
+                            Resume
+                        </NavLink>
                     </li>
                     <li className="navbar__item">
-                        <NavLink to="/project" className="navbar__link" activeClassName="navbar__link--active" onClick={handleClick}>Projects</NavLink>
+                        <NavLink
+                            to="/project"
+                            className="navbar__link"
+                            activeClassName="navbar__link--active"
+                            onClick={handleClick}
+                        >
+                            Projects
+                        </NavLink>
                     </li>
                     <li className="navbar__item">
-                        <NavLink to="/contact" className="navbar__link" activeClassName="navbar__link--active" onClick={handleClick}>Contact</NavLink>
+                        <NavLink
+                            to="/contact"
+                            className="navbar__link"
+                            activeClassName="navbar__link--active"
+                            onClick={handleClick}
+                        >
+                            Contact
+                        </NavLink>
                     </li>
                 </ul>
-                <div className='navbar__icon' onClick={handleClick}>
-                    {isMenu ? <FaTimes /> :  <FaBars />}
+                </Animated>
+                <div className="navbar__icon" onClick={handleClick}>
+                    {isMenu ? <FaTimes /> : <FaBars />}
                 </div>
             </div>
         </nav>
     );
-}
+};
 
 export default Navbar;

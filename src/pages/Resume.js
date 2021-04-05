@@ -1,13 +1,15 @@
 import React from 'react'
 import '../style/Resume.css'
+import { Animated } from "react-animated-css";
 
 const Resume = () => {
     return (
         <div className="resume">
+            <Animated animationIn="fadeIn" animationInDuration={1500} isVisible={true} >
             <div className="container">
                 <div className="title">Resume</div>
                 <div className="resume-box">
-                    <div className="resume-title"><span>Education</span><a href="https://i.topcv.vn/kieudaidac?ref=3966510" target="_blank" className="btn">Download CV</a></div>
+                    <div className="resume-title"><span>Education</span><a href="https://i.topcv.vn/kieudaidac?ref=3966510" rel="noreferrer" target="_blank" className="btn">Download CV</a></div>
                     
                     <div className="resume-content">
                         <div className="resume-info">
@@ -53,6 +55,7 @@ const Resume = () => {
                     </div>
                 </div>
             </div>
+            </Animated>
         </div>
     );
 }

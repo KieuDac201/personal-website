@@ -1,6 +1,7 @@
 import React from "react";
 import '../style/Contact.css';
     import { useForm } from 'react-hook-form';
+    import { Animated } from "react-animated-css";
 
 const Contact = () => {
     const { register, handleSubmit, errors } = useForm(); // initialize the hook
@@ -9,9 +10,12 @@ const Contact = () => {
     };
 
     return (
+        
         <div className="contact">
             <div className="container">
+            <Animated animationIn="fadeIn"  animationInDuration={1500} isVisible={true} >
                 <div className="title">Let's talk</div>
+                
                 <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
                     <div className="form-group">
                         <div>
@@ -57,8 +61,11 @@ const Contact = () => {
                         <input className="btn" type="submit" value="SEND"/>
                     </div>
                 </form>
+                </Animated>
             </div>
+            
         </div>
+        
     );
 };
 export default Contact;

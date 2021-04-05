@@ -1,15 +1,19 @@
 import React from 'react'
 import { FaFacebookF, FaTwitter, FaGithub, FaSkype } from "react-icons/fa";
 import '../style/Footer.css'
+import { Animated } from "react-animated-css";
 
 function Footer() {
     return (
         <div className="footer">
             <div className="footer-container">
+            <Animated animationIn="fadeInLeft" animationInDuration={1000} animationInDelay={800} isVisible={true}>
                 <div className="footer-left">
                     <h4>Address</h4>
                     <p>Thach That - Ha Noi</p>
                 </div>
+                </Animated>
+                <Animated animationIn="fadeInRight" animationInDuration={1000} animationInDelay={800} isVisible={true}>
                 <div className="footer-right">
                     <div className="footer-item">
                         <h4>Call</h4>
@@ -37,7 +41,9 @@ function Footer() {
                         </p>
                     </div>
                 </div>
+                </Animated>
             </div>
+            
         </div>
     )
 }
