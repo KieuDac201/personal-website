@@ -14,15 +14,19 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="navbar__container">
                 <Animated animationIn="fadeInLeft" animationInDuration={1000} isVisible={true}>
-
-                    <div className="navbar__logo">
-                        <div className="navbar__logo--name">
-                            <div className="square"></div>Kieu Dac
-                    </div>
-                        <div className="navbar__logo--position">
-                            <span>/</span> FRONT-END DEVELOPER
+                    <NavLink
+                        to="/"
+                    >
+                        <div className="navbar__logo">
+                            <div className="navbar__logo--name">
+                                <div className="square"></div>Kieu Dac
                         </div>
-                    </div>
+                            <div className="navbar__logo--position">
+                                <span>/</span> FRONT-END DEVELOPER
+                            </div>
+                        </div>
+                    </NavLink>
+                    
                 </Animated>
                 <Animated animationIn="fadeInRight" animationInDuration={1000} isVisible={true}>
                 <ul className={isMenu ? "navbar__menu active" : "navbar__menu"}>
