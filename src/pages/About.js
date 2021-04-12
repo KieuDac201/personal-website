@@ -9,7 +9,7 @@ const About = () => {
     return (
         <section className="about">
             <div className="about-picture">
-                <Animated animationIn="fadeIn"  animationInDuration={1000} isVisible={true} >
+               
                     <div className="about-card">
                         <div className="about-card__img">
                             <img src={picProfile} alt="hello" />
@@ -51,11 +51,9 @@ const About = () => {
                             </a>
                         </div>
                     </div>
-                </Animated>
             </div>
 
             <div className="about-content">
-                <Animated animationIn="fadeIn" animationInDuration={1000} isVisible={true} > 
                 <h1>Hello</h1>
                 <h3>Here's who I am & what I do</h3>
                 <div className="about-content__btn">
@@ -74,7 +72,6 @@ const About = () => {
           I’m a great place for you to tell a story and let your users know a
           little more about you.
         </p>
-        </Animated>
             </div>
 
         </section>

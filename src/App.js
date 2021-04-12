@@ -1,10 +1,11 @@
 import React from "react";
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Error from "./pages/Error";
 import Project from "./pages/Project";
 import Resume from "./pages/Resume";
 import "./style/Responsive.css";
@@ -20,7 +21,8 @@ function App() {
           <Route path="/project" component={Project} />
 
           <Route path="/contact" component={Contact} />
-          <Route path="/" component={About} />
+          <Route exact path="/" component={About} />
+          <Route path="*" component={Error} />
       </Switch>
       <Footer />
     </Router>

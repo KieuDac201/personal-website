@@ -5,7 +5,6 @@ import { Animated } from "react-animated-css";
 const Resume = () => {
     return (
         <div className="resume">
-            <Animated animationIn="fadeIn" animationInDuration={1500} isVisible={true} >
             <div className="container">
                 <div className="title">Resume</div>
                 <div className="resume-box">
@@ -55,7 +54,6 @@ const Resume = () => {
                     </div>
                 </div>
             </div>
-            </Animated>
         </div>
     );
 }

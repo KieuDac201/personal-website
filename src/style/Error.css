@@ -1,0 +1,31 @@
+.error{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: #F8F8F8;
+    color: #777777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.error h2{
+    font-size: 100px;
+    color: #777;
+}
+.error h5{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.error a{
+    text-decoration: underline;
+}
+.error p{
+    line-height: 1.7;
+}
+.error *{
+    color: #777;
+}

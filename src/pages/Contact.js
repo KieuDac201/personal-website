@@ -13,7 +13,6 @@ const Contact = () => {
         
         <div className="contact">
             <div className="container">
-            <Animated animationIn="fadeIn"  animationInDuration={1500} isVisible={true} >
                 <div className="title">Let's talk</div>
                 
                 <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
@@ -61,7 +60,6 @@ const Contact = () => {
                         <input className="btn" type="submit" value="SEND"/>
                     </div>
                 </form>
-                </Animated>
             </div>
             
         </div>

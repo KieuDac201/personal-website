@@ -7,7 +7,6 @@ import { Animated } from "react-animated-css";
 const Project = () => {
     return (<>
         <div className="project">
-            <Animated animationIn="fadeIn" animationInDuration={1500} isVisible={true} >
                 <div className="container">
                     <div className="title">Project</div>
                     <div className="project-desc">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</div>
@@ -17,7 +16,6 @@ const Project = () => {
                         })}
                     </div>
                 </div>
-            </Animated>
         </div>
     </>
     );

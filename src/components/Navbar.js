@@ -13,7 +13,6 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="navbar__container">
-                <Animated animationIn="fadeInLeft" animationInDuration={1000} isVisible={true}>
                     <NavLink
                         to="/"
                     >
@@ -27,8 +26,6 @@ const Navbar = () => {
                         </div>
                     </NavLink>
                     
-                </Animated>
-                <Animated animationIn="fadeInRight" animationInDuration={1000} isVisible={true}>
                 <ul className={isMenu ? "navbar__menu active" : "navbar__menu"}>
                     <li className="navbar__item">
                         <NavLink
@@ -72,7 +69,6 @@ const Navbar = () => {
                         </NavLink>
                     </li>
                 </ul>
-                </Animated>
                 <div className="navbar__icon" onClick={handleClick}>
                     {isMenu ? <FaTimes /> : <FaBars />}
                 </div>
