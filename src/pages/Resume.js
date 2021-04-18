@@ -1,10 +1,17 @@
 import React from 'react'
 import '../style/Resume.css'
-import { Animated } from "react-animated-css";
+import { pageAnimation } from "../animation";
+import { motion } from "framer-motion"
+
 
 const Resume = () => {
     return (
-        <div className="resume">
+        <motion.div variants={pageAnimation}
+        initial="hidden"
+        animate="show"
+        exit="exit">
+        <div className="resume"
+        >
             <div className="container">
                 <div className="title">Resume</div>
                 <div className="resume-box">
@@ -55,6 +62,7 @@ const Resume = () => {
                 </div>
             </div>
         </div>
+        </motion.div>
     );
 }
 export default Resume;

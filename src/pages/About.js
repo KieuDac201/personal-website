@@ -3,11 +3,19 @@ import picProfile from "../assets/img/dac.jpg";
 import { FaFacebookF, FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "../style/About.css";
-import { Animated } from "react-animated-css";
+import { pageAnimation } from "../animation";
+import { motion } from "framer-motion"
+
 
 const About = () => {
     return (
-        <section className="about">
+        <motion.div variants={pageAnimation}
+        initial="hidden"
+        animate="show"
+        exit="exit">
+        <section className="about"
+                
+        >
             <div className="about-picture">
                
                     <div className="about-card">
@@ -65,9 +73,9 @@ const About = () => {
                     </Link>
                 </div>
                 <p>
-                    I'm a paragraph. Click here to add your own text and edit me. It’s
-                    easy. Just click “Edit Text” or double click me to add your own
-                    content and make changes to the font.
+                Currently a senior student at Ha Noi College Tech and Trading . Passionate about code,
+                constantly learn and discover new technology. Doing my best in
+                order to complete my task and I want to become a expert IT
           <br /> <br />
           I’m a great place for you to tell a story and let your users know a
           little more about you.
@@ -75,6 +83,7 @@ const About = () => {
             </div>
 
         </section>
+        </motion.div>
     );
 };
 export default About;
