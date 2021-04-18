@@ -81,7 +81,7 @@
     }
     .about-picture{
       width: 100%;
-      background: linear-gradient(to bottom, var(--light-color) 50%, var(--secondary-color)  50% 100%);
+      background: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
