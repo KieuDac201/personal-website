@@ -12,3 +12,6 @@
     background-color: #fff;
     overflow: hidden;
 }
+.loading img{
+    width: 80px;
+}

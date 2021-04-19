@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer";
@@ -14,9 +14,14 @@ import "./style/Responsive.css";
 
 function App() {
 
-  
+  const [isLoading, setIsLoading] = useState(true)
+  useEffect(() => {
+    setTimeout(() => {setIsLoading(false)},1000)
+  },[])
   return (
-    <Router>
+    <>
+    {isLoading ? <Loading /> : <Router>
+      
       <Navbar />
       <Switch>
           <Route path="/resume" component={Resume} />
@@ -28,7 +33,9 @@ function App() {
           <Route path="*" component={Error} />
       </Switch>
       <Footer />
-    </Router>
+    </Router>}
+    
+    </>
   );
 }
 

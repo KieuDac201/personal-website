@@ -61,7 +61,7 @@ const Contact = () => {
                         <div className="form-group">
                             <div>
                                 <label htmlFor="message">Message</label>
-                                <textarea name="message" id="message" className="form-control" name="message" 
+                                <textarea name="message" id="message" className="form-control"
                                             placeholder={errors.message && 'Please enter message'}  ref={register({required: true})}>
                                 </textarea>
                             </div>

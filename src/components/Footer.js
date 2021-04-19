@@ -1,7 +1,6 @@
 import React from 'react'
 import { FaFacebookF, FaTwitter, FaGithub, FaSkype } from "react-icons/fa";
 import '../style/Footer.css'
-import { Animated } from "react-animated-css";
 
 function Footer() {
     return (
@@ -23,16 +22,16 @@ function Footer() {
                     <div className="footer-item">
                         <h4>Follow</h4>
                         <p>
-                            <a href="https://www.facebook.com/Dac.dep/" target="_blank" className="footer-link">
+                            <a href="https://www.facebook.com/Dac.dep/" target="_blank" className="footer-link" rel="noreferrer" >
                                 <FaFacebookF  />
                             </a>
-                            <a href="" className="footer-link" href="https://www.facebook.com/Dac.dep/" target="_blank">
+                            <a  className="footer-link" href="https://www.facebook.com/Dac.dep/" target="_blank" rel="noreferrer" >
                                 <FaTwitter  />
                             </a>
-                            <a href="https://github.com/KieuDac201" className="footer-link" target="_blank">
+                            <a href="https://github.com/KieuDac201" className="footer-link" target="_blank" rel="noreferrer" >
                                 <FaGithub  />
                             </a>
-                            <a href="" className="footer-link" href="https://www.facebook.com/Dac.dep/" target="_blank">
+                            <a  className="footer-link" href="https://www.facebook.com/Dac.dep/" target="_blank" rel="noreferrer" >
                                 <FaSkype  />
                             </a>
                         </p>
