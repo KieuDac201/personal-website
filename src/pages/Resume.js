@@ -2,6 +2,7 @@ import React from 'react'
 import '../style/Resume.css'
 import { pageAnimation } from "../animation";
 import { motion } from "framer-motion"
+import cv from '../assets/img/cv.pdf'
 
 
 const Resume = () => {
@@ -15,7 +16,7 @@ const Resume = () => {
             <div className="container">
                 <div className="title">Resume</div>
                 <div className="resume-box">
-                    <div className="resume-title"><span>Education</span><a href="https://i.topcv.vn/kieudaidac?ref=3966510" rel="noreferrer" target="_blank" className="btn">Download CV</a></div>
+                    <div className="resume-title"><span>Education</span><a href={cv} rel="noreferrer" download target="_blank" className="btn">Download CV</a></div>
                     
                     <div className="resume-content">
                         <div className="resume-info">
