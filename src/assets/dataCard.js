@@ -4,6 +4,7 @@ import card3 from '../assets/img/das.png'
 import card4 from '../assets/img/todo.png'
 import card5 from '../assets/img/film.png'
 import card6 from '../assets/img/landing-page.png'
+import card7 from '../assets/img/eWeb.png'
 
 const dataCard = [
     {
@@ -21,10 +22,10 @@ const dataCard = [
         link: 'https://kieudac201.github.io/thewebsite.github.io/'
     },
     {
-        title: 'Loopstudios ',
+        title: 'Ecommerce Website  ',
         subTitle: 'Landing Page',
         text: "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.",
-        img: card2,
+        img: card7  ,
         link: 'https://kieudac201.github.io/loopstudios-landing-page-main.github.io/'
     },
     {
