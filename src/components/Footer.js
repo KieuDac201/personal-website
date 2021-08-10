@@ -13,11 +13,11 @@ function Footer() {
                 <div className="footer-right">
                     <div className="footer-item">
                         <h4>Call</h4>
-                        <p>082 7898 103</p>
+                        <p>082 78*****</p>
                     </div>
                     <div className="footer-item">
                         <h4>Email</h4>
-                        <p>kieudac18082001@gmail.com</p>
+                        <p>kieudac***@gmail.com</p>
                     </div>
                     <div className="footer-item">
                         <h4>Follow</h4>
